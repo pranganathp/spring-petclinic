@@ -1,5 +1,5 @@
 FROM tomcat:8
 LABEL author='Ranganath'
-COPY /gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/gameoflife.war
+COPY /spring-petclinic/target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar /usr/local/tomcat/webapps/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
