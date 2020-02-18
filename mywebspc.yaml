@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spc
+  template:
+    metadata:
+      labels:
+        app: spc
+    spec:
+      containers:
+      - name: spc
+        image: dockerranganath/demo_repo_spc:0218
+        ports:
+        - containerPort: 80
